@@ -1,0 +1,18 @@
+.images {
+  display: flex;
+  flex-wrap: wrap;
+
+  .image {
+    flex: 1 1 25%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@include breakpoint(small) {
+  .images .image {
+    flex: 1 1 50%;
+  }
+}

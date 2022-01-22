@@ -1,0 +1,105 @@
+.clients {
+  width: 80%;
+  margin: 100px auto;
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    h3 {
+      font-family: $secondary-font;
+      color: $very-dark-grayish-blue;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+
+    .client {
+      flex-basis: 29%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-img {
+        width: 75px;
+        margin-bottom: 50px;
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      &-description {
+        color: $dark-grayish-blue;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 50px;
+      }
+
+      &-info {
+        &-name {
+          font-family: $secondary-font;
+          color: $very-dark-desaturated-blue;
+          margin-bottom: 15px;
+        }
+
+        &-role {
+          font-size: 13px;
+          color: $grayish-blue;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(medium) {
+  .clients {
+    width: 95%;
+  }
+}
+
+@include breakpoint(small) {
+  .clients {
+    margin: 380px auto 100px;
+
+    &-title {
+      font-size: 18px;
+    }
+
+    .cards {
+      flex-direction: column;
+      gap: 80px;
+      .client {
+        width: 90%;
+        margin: auto;
+
+        &-img {
+          width: 100px;
+          margin-bottom: 25px;
+        }
+
+        &-description {
+          font-size: 22px;
+          margin-bottom: 25px;
+        }
+
+        &-info {
+          &-name {
+            font-size: 23px;
+            margin-bottom: 10px;
+          }
+          &-role {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

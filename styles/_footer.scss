@@ -1,0 +1,32 @@
+.footer {
+  background-color: $cyan-footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-logo {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  &-links {
+    margin-bottom: 45px;
+    & > * + * {
+      margin-left: 40px;
+    }
+    a {
+      color: $cyan-graphic;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  &-social {
+    margin-bottom: 60px;
+    & > * + * {
+      margin-left: 30px;
+    }
+  }
+}
