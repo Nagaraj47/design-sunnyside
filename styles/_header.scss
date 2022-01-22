@@ -29,6 +29,7 @@ header {
         .nav-item a {
           display: inline-block;
           color: $white;
+          font-size: 18px;
           font-weight: 600;
           margin-right: 40px;
           cursor: pointer;
@@ -45,7 +46,7 @@ header {
         color: #000;
         text-transform: uppercase;
         font-family: $secondary-font;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 600;
         padding: 10px 20px;
         border-radius: 20px;
