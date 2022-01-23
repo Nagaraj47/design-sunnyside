@@ -3,4 +3,5 @@ let nav = document.querySelector(".nav");
 
 menuBtn.addEventListener("click", () => {
   nav.classList.toggle("open");
+  menuBtn.classList.toggle("active");
 });

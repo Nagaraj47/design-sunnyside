@@ -60,8 +60,26 @@ header {
     }
 
     .menu-btn {
-      display: none;
-      cursor: pointer;
+      display: inline-block;
+      & > * {
+        width: 25px;
+        height: 3px;
+        background-color: $white;
+        margin-bottom: 3px;
+        transition: all 200ms ease-in-out;
+      }
+
+      &.active {
+        .first {
+          transform: rotate(45deg) translateX(8px);
+        }
+        .second {
+          opacity: 0;
+        }
+        .third {
+          transform: rotate(-45deg) translate(8px, -0.5px);
+        }
+      }
     }
   }
 
